@@ -27,7 +27,7 @@ class CommandLine
 
 	def get_text
 		if @correct
-			print "Please enter text: "
+			print "Please enter text:"
 			@text = gets.chomp
 			
 		end
@@ -53,17 +53,17 @@ class CommandLine
 				puts "There are #{text_array.length} words."
 				
 			when "2"
-				@text = @text.sub(" ", "")
+				@text = @text.gsub(" ", "")
 				 puts "There are #{@text.length}"
 
 			when "3"
 				puts "the reverse is #{@text.reverse}"
 
 			when "4"
-				puts "the reverse is #{@text.upcase}"
+				puts "the Uppercaseis #{@text.upcase}"
 
 			when "5"
-				puts "the reverse is #{@text.downcase}"
+				puts "the Lowercase is #{@text.downcase}"
 			else
 
 			puts "error message"	
